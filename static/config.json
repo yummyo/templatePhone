@@ -1,0 +1,13 @@
+{
+    "home": [{
+            "type": "img",
+            "src": "http://www.smartwork.link/index/img/swp-conference-room-booking-1024x683-2-1024x683.jpg"
+        },
+        {
+            "type": "text",
+            "title": "SAFE OPERATION SAFE WORKING",
+            "subheading": "安全办公",
+            "content": "注重信息办公、环境办公、人性化办公的隐私安全，增强办公智能的安全性、易用性与可扩展性，提高企业资源的协作与共享。"
+        }
+    ]
+}

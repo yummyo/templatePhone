@@ -1,0 +1,74 @@
+// less 公共变量
+//背景 灰
+@home-color : #f5f5f5;
+// 头部高度
+@head-height : 3rem;
+// 主体蓝
+@subject-color : #2EADFF;
+// 日程背景浅蓝
+@schedule-font-bg : #96D6FF;
+// 按钮橘
+@btn-color-orange : #FF7B48;
+// 成功绿
+@color-success : #50E3C2;
+// 失败红
+@color-error : #FE7E7E;
+// 灰度字体
+@font-color : #CFCFCF;
+//模块背景色
+@bg-color:#FFFFFF;
+
+// 公共样式
+.h100{
+  height: 100%
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.fl-right{
+  float: right;
+}
+.fl-left{
+  float: left;
+}
+.border-1px{
+  position:relative;
+  &:after{
+    display:block;
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:100%;
+    border-top:1px solid #D9D9D9;
+    content:' ';
+  }
+}
+// 默认白色背景button @color：需要改变的对应色值
+.default-btn(@color:@subject-color){
+  // padding: .3rem 1.5rem;
+  color: @color;
+  background: #ffffff;
+  &:after{
+    border-color: @color;
+  }
+  &.weui-btn_disabled:after{
+    color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+// 蓝色背景button
+.default-blue-btn{
+  background:@subject-color;
+  color:#ffffff;
+}
+// form必填项
+.valid-requied::before{
+  content:'*';
+  color:red;
+}

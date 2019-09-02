@@ -1,0 +1,27 @@
+
+// 单行溢出省略号 如果没效果需要手动设置宽度
+.line-apostrophe(){
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+// 多行行溢出省略号 @lines 行数
+.lines-apostrophe(@lines){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @lines;
+  -webkit-box-orient: vertical;
+}
+
+// 图片处理
+.bg-image(@url){
+  background-image: url("@{url}@2x.png");
+  background-size:100% 100%;
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+    background-image: url("@{url}@3x.png");
+    background-size:100% 100%;
+  }
+}
+
+
