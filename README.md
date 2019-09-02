@@ -1,10 +1,10 @@
 # demo-project
 
-> A Vue.js project
+> 一个手机端基础模板，通过 json 配置页面，基础模板。暂时只支持 img 和 text
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
